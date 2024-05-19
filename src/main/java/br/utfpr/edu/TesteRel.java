@@ -9,8 +9,13 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Teste {
+public class TesteRel {
     private int idfixo;
-    private String descricao;
-    private String situacao;
+    private String pai;
+    private String relacionado;
+
+    public TesteRel(String pai, String relacionado) {
+        this.pai = pai;
+        this.relacionado = relacionado;
+    }
 }
